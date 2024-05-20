@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonho Mágico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="siteinstitucional.css">
+</head>
+<body class="corfundo">
+    <div class="navBar">
+        <div class="logo"></div>
+        <div class="imagem1" >
+        <button onclick="home()" class="botao">Home</button></div>
+        <div class="imagem2">
+        <button onclick="sobrenos()" class="botao">Sobre nós</button></div>
+        <div class="imagem4">
+        <button onclick="lista()" class="botao">Livros</button></div>
+        <div class="imagem3">
+        <button onclick="contato()" class="botao">Contato</button></div>
+        <a href="InfantilCadastro.html"><button onclick="cadastro()" class="botao, entrar" >Cadastre-se</button></a>
+    </div>
+    <div class="texto">
+    <div class="home">
+    </div>
+    <div>
+    Home</div>
+</div>
+<div class="container">
+    <div class="texto2">
+        Sobre Nós
+    </div>
+    <div class="home2"></div>
+</div>
+<div class="texto">
+    <div class="home3"></div>
+    <div>
+    Livros</div>
+</div>
+<div class="contato">
+    <div class="comentario">
+     Nome: <input id="input_nomeContato" type="text" class="coment"><br>
+     Email: <input id="input_emailContato" type="text" class="coment"><br>
+     Comentário: <input id="input_comentario" type="text" class="coment"><br>
+     <button onclick="enviar()" class="btenviar">Enviar</button>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    var emailCadastro;
+    var senhaCadastro;
+
+    function cadastro(){
+        var nome = input_nome.value;
+        var idade = Number(input_idade.value);
+        var genero = input_genero.value;
+        var email = input_email.value;
+        var senha = input_senha.value;
+        var confirmarSenha = input_conf.value;
+        
+        if (email.indexOf('@') == -1 || email.indexOf('.com') == -1) {
+            alert("Email Inválido");
+        }
+        else if (nome == "") {
+            alert("Preencha o campo nome");
+        }
+        else if (senha.length < 8) {
+            alert("Senha deve conter no minímo 8 caracteres");
+        }
+        else if (confirmarSenha == "") {
+            alert("Confirme a senha");
+        }
+        else if (senha !== confirmarSenha) {
+            alert("Senha diferente da anterior!");
+        }
+
+        else {
+            emailCadastro = email;
+            senhaCadastro = senha;
+        }
+
+
+    }
+</script>
