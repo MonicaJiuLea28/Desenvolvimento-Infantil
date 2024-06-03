@@ -1,20 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     flex-direction: column;
 
 }
  .fonte{
     color: #D15FEE ;
-   -webkit-text-stroke-width: 0.8px;
+   -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: black;
+   font-size: 45px;
 } 
 
 .fundo {
     background-color: #FFF8DC;
-    background-image: url('fundoInteiro.jpg');
+    background-image: url('Fundo\ tela\ Cadastro.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,6 +30,7 @@
     border-radius: 30px;
     /* margin-left: 40px;  */
     margin-right: 35vw;
+    /* margin-top: 135px; */
     /* margin-top: 160px; */
     border: 2px solid #B0E0E6;
     background-image: url('fundoPI.avif');
@@ -51,13 +53,23 @@ body {
 
 }
 
+.divBotao{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
 .botao {
     border-radius: 30px;
-    width: 80px;
-    height: 30px;
+    width: 90px;
+    height: 25px;
     background-color: #B0E0E6;
-    margin: 10px;
+    align-items: center;
+    text-decoration: none;
 }
+
+
 
 /* div{
     text-align: center;
