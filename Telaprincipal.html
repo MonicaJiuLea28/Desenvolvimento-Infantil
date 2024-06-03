@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonho Mágico</title>
+    <script src="TelaPrincipal.js"></script>
+
+    <link rel="stylesheet" href="TelaPrincipal.css">
+    <link rel="icon" href="./assets/icon/favicon2.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body class="divCorFundo">
+    <div class="divNavBar">
+        <div class="divLogo"></div>
+
+        <div>
+        <div class="divLivro">
+            <a href="#Livro">Livros
+        </div></a></div>
+
+        <div>
+        <div class="divDash">
+            <a href="#Dashboard">Dashboard
+        </div></a></div>
+    </div>
+
+    <div class="divBlocoPergunta">
+    <div class="divPerguntaLivro" id="Livro">
+        <h5>Qual livro deseja ler?:</h5> <input id="input_pergunta" type="text" class="inputPergunta">
+        <button onclick="pesquisar()" class="botaoPesquisa">Pesquisar</button>
+    </div></div>
+    <div id="div_msg"></div>
+</body>
+</html>
