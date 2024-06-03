@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Sonho Mágico</title>
+    <script src="javascriptLogin.js"></script>
     <link rel="stylesheet" href="InfantilLogin.css">
 </head>
 
@@ -12,8 +13,12 @@
     <div class="quadrado">
         <h1 class="fonte">Login</h1>
         <div>E-mail do responsável: <input id="input_email" type="text" class="responsavel"></div>
-        <div>senha: <input id="input_senha" type="text" class="responsavel"></div>
+        <div>senha: <input id="input_senha" type="password" class="responsavel"></div>
+
+        <div class="divBotao">
+        <button onclick="voltar()" class="botao">Voltar</button>
         <button onclick="login()" class="botao">Login</button>
+        </div>
     </div>
 </body>
 
