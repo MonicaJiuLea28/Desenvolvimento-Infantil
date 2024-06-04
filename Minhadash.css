@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.corFundo{
+    background: linear-gradient(-45deg, #ffd6ff, #e7c6ff, #c8b6ff);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 98px;
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+    background-position: 10px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.divLogo{
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    background-image: url('Logo\ Sem\ marca\ d\'agua.png');
+    background-size: cover;
+    width: 12vw;
+    height: 13vh;
+    margin-top: 10px;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .botaoSair{
+    width: 60px;
+    height: 40px;
+    background-color: #b8c0ff;
+    border-radius: 30px;
+    color: black;
+}
+
