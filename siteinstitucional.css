@@ -3,21 +3,34 @@
     padding: 0;
 }
 
-.corfundo {
-    background-color: #E6E6FA;
+html {
+    scroll-behavior: smooth;
 }
 
-.navBar {
+
+
+.corfundo {
+    /* background-color: #FFEFDB; */
+    background: linear-gradient(-45deg, #ffd6ff, #e7c6ff, #c8b6ff);
+}
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     text-align: center;
-    width: auto;
+    width: 100%;
     height: 98px;
     background-color: white;
     justify-content: space-between;
+    position: fixed;
+    background-position: 10px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    line-height: 1.6;
 }
+
 .logo{
     display: flex;
     align-items: start;
@@ -31,24 +44,41 @@
 }
 
 .botao {
-    font-size: 20px;
-    /* color: white; */
-    margin-right: 1px;
-    margin-top: 65px;
+    margin-top: 60px;
     width: 120px;
-    height: 50px;
-    /* border: none; */
-    border-radius: 30px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    /* background-color: #836FFF; */
-    background-color: white;
+    height: 10px;
+    border-radius: 10px;
     color: black;
     border: none;
-
-
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    line-height: 1.6;
 }
+
+.divcadastroLogin{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divCadastro{
+    right: 110px;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+.divBotao{
+    background-color: #b8c0ff;
+    border-radius: 50px;
+    height: 30px;
+    width: 80px;
+}
+
 
 .imagem1 {
 
@@ -56,81 +86,500 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 4vw;
-    height: 9vh;
+    width: 40px;
+    height: 40px;
     /* border-radius: 360px;  */
-    margin-left: 0.10vw;
+    margin-left: 6px;
+    /* margin-right: 20px ; */
+    margin-bottom: 30px;
     background-image: url('castelo\ rosa.png');
     /* size: 70px; */
     background-size: cover;
     /* background-color: #FF6A6A; */
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    animation: imagem1 2s ease-in-out;
 }
+
+@keyframes imagem1 {
+    0% {
+      transform: rotate(0deg); /
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
 
 .imagem2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 4vw;
-    height: 9vh;
-    border-radius: 80px;
-    margin-left: 2vw;
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 4px;
     background-image: url('sobre\ nós.png');
     background-size: cover;
-
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    animation: imagem2 2s ease-in-out;
 }
+
+@keyframes imagem2 {
+    0% {
+      transform: rotate(0deg); /
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
 
 .imagem3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 4vw;
-    height: 9vh;
+    width: 50px;
+    height: 50px;
     border-radius: 80px;
-    margin-left: 2vw;
+    margin-left: 4px;
     background-image: url('lampada\ amarela.png');
     background-size: cover;
+    margin-bottom: 30px;
+    position: relative;
+    animation: imagem2 2s ease-in-out;
 }
+
+@keyframes imagem3 {
+    0% {
+      transform: rotate(0deg); /
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
 
 .imagem4 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 4vw;
-    height: 9vh;
+    width: 40px;
+    height: 40px;
     border-radius: 80px;
-    margin-left: 2vw;
     background-image: url('livro\ verde.png');
     background-size: cover;
+    margin-bottom: 30px;
+    position: relative;
+    animation: imagem4 2s ease-in-out;
 }
 
+@keyframes imagem4 {
+    0% {
+      transform: rotate(0deg); /
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
+
 .entrar {
-    border-radius: 30px;
-    width: 60px;
+    border-radius: 360px;
+    border: 1px solid black;
+    width: 100px;
     height: 40px;
     background-color: #836FFF;
+    color: white;
+}
+.divHome1{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300px;
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
 }
 
 .home {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 40vw;
-    height: 60vh;
-    margin-top: 20px;
-    margin-left: 2vw;
-    border-radius: 80px;
-    border: 2px solid #BF3EFF;
-    background-image: url('leituranaarvora.jpg');
+    justify-content: space-between; */
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    border-radius: 300px;
+    border: 2px solid green;
+    background-image: url('chapVermelho.jpg');
     background-size: cover;
-    background-position: center;
-    box-shadow: 0px 0px 10px 2px #BF3EFF;
 }
 
-.texto {
+.divCarrossel{
+    font-family: Arial, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 5vh; */
+    border-radius: 30px;
+    background-size: cover;
+    margin-top: 300px;
+}
+
+.carrossel {
+  width: 500%;
+  height: 500px;
+  max-width: 600px;
+  max-height: 168px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* background-size: cover; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 250px;
+}
+
+.carrossel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  background-size: cover;
+}
+
+.carrossel-inner img {
+  width: 100%;
+  height: 500%;
+  border: none;
+  background-size: cover;
+  margin-bottom: 250px;
+  /* margin-top: 250px; */
+}
+
+
+/* .home2{
+    margin-top: 140px;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border: 2px solid #87CEEB;
+    background-image: url('3\ proquinhos.jpg');
+    background-size: cover;
+
+} */
+
+
+
+/* .home3{
+    width: 320px;
+    height: 320px;
+    margin-top: 190px;
+    border-radius: 300px;
+    border: 2px solid white;
+    background-image: url('pequeno\ principe.jpg');
+    background-size: cover;
+    background-position: center;
+} */
+
+.divCarrossel2{
+  font-family: Arial, sans-serif;
+  /* margin: 0;
+  padding: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 5vh; */
+  border-radius: 30px;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.carrossel2 {
+width: 1000px;
+height: 5000px;
+max-width: 800px;
+max-height: 400px;
+overflow: hidden;
+border-radius: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* background-size: cover; */
+/* margin-left: auto;
+margin-right: auto; */
+margin-top: 150px;
+margin-bottom: 250px;
+}
+
+.carrossel-inner2 {
+display: flex;
+animation: marquee 20s linear infinite;
+margin-top: 50px;
+/* background-size: cover;  */
+}
+
+.carrossel-inner2 img {
+width: 100%;
+height: 500%;
+border: none;
+/* margin-bottom: 100px; */
+/* background-size: cover; */
+/* margin-bottom: 250px; */
+/* margin-top: 250px; */
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* .texto {
+    margin-right: 100px;
+    margin-top: 500px;
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+} */
+.texto2{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: start;
+    flex-direction: row;
+    margin-right: 40px;
+    width: 800px;
+    font-size: 20px;
+    font-family: 'Chewy', cursive;
+
+}
+
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  /* background-color: #ffd6ff;
+  width: 300px;
+  height: 400px; */
+  /* margin-right: 20px; */
+  font-family: "Comic Neue", cursive;
+  font-weight: 300px;
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.divHome2{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 500px;
+  /* background-image: url('pergaminho.avif'); */
+}
+
+.contato{
+    margin-top: 30px;
+    width: 700px;
+    height: 500px;
+    /* background-image: url('livro\ personagens.png'); */
+    background-size: cover;
+    /* background-position: center; */
+    align-items: center;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    /* margin-top: 200px; */
+
+}
+.comentario{
+    border-radius: 40px;
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    margin-right: 250px;
+    margin-bottom: 100px;
+}
+.coment{
+    border-radius: 30px;
+    width: 280px;
+    height: 30px;
+    border-color: #CD0000;
+    justify-content: center;
+}
+.btenviar {
+    width: 90px;
+    height: 30px;
+    background-color: #CD0000;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box .h3{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 1rem;
+
+}
+
+.divSobreMim1{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+}
+
+.divSobreMim{
+  width: 200px; 
+  height: 200px; 
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 5px solid #836FFF; 
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+
+.divSobreMim img{
+  /* background-image: url('Minha\ Foto.jpg'); */
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 20%;
+  margin-top: 150px;
+}
+
+.divTexto {
+  width: 500px; 
+  height: 280px; 
+  font-family: "Comic Neue", cursive;
+  font-weight: 300px;
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: bold;
+  background-image: url('Folha\ Sobre\ Mim.avif');
+  /* max-width: 100%;
+  max-height: 80%; */
+  background-position: center;
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  /* border: 3px solid #000; */
+}
+
+.divFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: white;
+  width: 100%;
+  height: 160px;
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+}
+
+.divCard1 {
+  display: flex;
+  border-right: solid 2px #43020B;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100px;
+}
+
+.divCard2 {
+  display: flex;
+  border-right: solid 2px #43020B;
+  flex-direction: row;
+  width: 30%;
+  height: 100px;
+  font-family: "Montserrat";
+  justify-content: center;
+  align-items: center;
+}
+
+.divCard2Aux {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  width: 30%;
+  margin: 10px;
+}
+
+.divCard3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  margin: 10px;
+  width: 30%;
+  height: 160px;
+  align-content: start;
+
+}
+
+.imgLogoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
