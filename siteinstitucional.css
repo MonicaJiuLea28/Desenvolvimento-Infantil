@@ -311,11 +311,11 @@ header {
   /* height: 5vh; */
   border-radius: 30px;
   background-size: cover;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  flex-direction: row;
-}
+  margin-top: 10px; 
+ margin-bottom: 50px;
+  /* text-align: center;
+  flex-direction: row; */
+} 
 
 .carrossel2 {
 width: 1000px;
@@ -325,6 +325,7 @@ max-height: 400px;
 overflow: hidden;
 border-radius: 20px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* margin-bottom: 180px; */
 /* background-size: cover; */
 /* margin-left: auto;
 margin-right: auto; */
@@ -343,6 +344,7 @@ margin-top: 50px;
 width: 100%;
 height: 500%;
 border: none;
+/* margin-top: 50px; */
 /* margin-bottom: 100px; */
 /* background-size: cover; */
 /* margin-bottom: 250px; */
@@ -372,9 +374,9 @@ border: none;
 .texto2{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    text-align: start;
-    flex-direction: row;
+    /* justify-content: space-around; */
+    /* text-align: start; */
+    /* flex-direction: row; */
     margin-right: 40px;
     width: 800px;
     font-size: 20px;
@@ -406,6 +408,7 @@ border: none;
   flex-direction: row;
   align-items: center;
   margin-right: 500px;
+  
   /* background-image: url('pergaminho.avif'); */
 }
 
@@ -421,7 +424,7 @@ border: none;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    /* margin-top: 200px; */
+    margin-top: 250px;
 
 }
 .comentario{
@@ -435,21 +438,7 @@ border: none;
     margin-right: 250px;
     margin-bottom: 100px;
 }
-.coment{
-    border-radius: 30px;
-    width: 280px;
-    height: 30px;
-    border-color: #CD0000;
-    justify-content: center;
-}
-.btenviar {
-    width: 90px;
-    height: 30px;
-    background-color: #CD0000;
-    border-radius: 30px;
-    margin-top: 20px;
-    margin-right: 20px;
-}
+
 
 .footer{
     width: 100%;
@@ -472,7 +461,7 @@ border: none;
 
 .divSobreMim1{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   
 }
@@ -487,6 +476,7 @@ border: none;
   border: 5px solid #836FFF; 
   margin-bottom: 50px;
   border-radius: 30px;
+  margin-top: 50px;
 }
 
 .divSobreMim img{
@@ -499,11 +489,11 @@ border: none;
 }
 
 .divTexto {
-  width: 500px; 
-  height: 280px; 
+  width: 550px; 
+  height: 300px; 
   font-family: "Comic Neue", cursive;
-  font-weight: 300px;
-  font-size: 25px;
+  font-weight: 250px;
+  font-size: 24px;
   font-style: oblique;
   font-weight: bold;
   background-image: url('Folha\ Sobre\ Mim.avif');
@@ -513,6 +503,8 @@ border: none;
   text-align: center;
   margin-bottom: 50px;
   border-radius: 10px;
+  margin-top: 25px;
+  line-height: 1.5;
   /* border: 3px solid #000; */
 }
 
