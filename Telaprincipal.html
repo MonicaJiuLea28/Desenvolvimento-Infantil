@@ -7,7 +7,7 @@
     <script src="TelaPrincipal.js"></script>
 
     <link rel="stylesheet" href="TelaPrincipal.css">
-    <link rel="icon" href="./assets/icon/favicon2.ico">
+    <link rel="icon" href="Logo Sem marca d'agua.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body class="divCorFundo">
@@ -16,13 +16,15 @@
 
         <div>
         <div class="divLivro">
-            <a href="#Livro">Livros
-        </div></a></div>
+            <h3>Livros</h3>
+        </div></div>
 
         <div>
         <div class="divDash">
             <a href="#Dashboard">Dashboard
         </div></a></div>
+       <a href="Cruzadinha.html"><button >Cruzadinha Divertida</button></a>
+        <a href="index.html"><button onclick="sair()">Sair</button></a>
     </div>
 
     <div class="divBlocoPergunta">
@@ -31,5 +33,14 @@
         <button onclick="pesquisar()" class="botaoPesquisa">Pesquisar</button>
     </div></div>
     <div id="div_msg"></div>
+
+    <div class="divBlocoComentario">
+        <div class="divComentario">
+        <h2>Deixe um comentário sobre o livro que você leu: </h2>
+        Nome do Livro:<input id="input_nomeLivro" type="text" class="inputPerguntaNome">
+        Comentário: <input id="input_comentario" type="text" class="inputPergunta">
+        <button onclick="enviar()" class="botaoPesquisa">Enviar</button>
+    </div>
+    </div>
 </body>
 </html>
