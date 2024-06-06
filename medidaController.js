@@ -2,13 +2,15 @@ var medidaModel = require("../models/medidaModel");
 
 function buscarUltimasMedidas(req, res) {
 
-    const limite_linhas = 7;
+    // const limite_linhas = 7;
 
-    var idAquario = req.params.idAquario;
+    // var idadeCrianca = req.params.idade;
 
-    console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
+    // var idAquario = req.params.idAquario;
 
-    medidaModel.buscarUltimasMedidas(idAquario, limite_linhas).then(function (resultado) {
+    // console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
+
+    medidaModel.buscarUltimasMedidas().then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -22,27 +24,117 @@ function buscarUltimasMedidas(req, res) {
 }
 
 
-function buscarMedidasEmTempoReal(req, res) {
+ function buscarMedidasEmTempoReal(req, res) {
 
-    var idAquario = req.params.idAquario;
+      var idUsuario = req.params.idUsuario;
 
-    console.log(`Recuperando medidas em tempo real`);
+     console.log(`Recuperando medidas em tempo real`);
 
-    medidaModel.buscarMedidasEmTempoReal(idAquario).then(function (resultado) {
-        if (resultado.length > 0) {
-            res.status(200).json(resultado);
-        } else {
-            res.status(204).send("Nenhum resultado encontrado!")
-        }
-    }).catch(function (erro) {
-        console.log(erro);
-        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
-        res.status(500).json(erro.sqlMessage);
-    });
-}
+     medidaModel.buscarMedidasEmTempoReal(idUsuario).then(function (resultado) {
+         if (resultado.length > 0) {
+             res.status(200).json(resultado);
+         } else {
+             res.status(204).send("Nenhum resultado encontrado!")
+         }
+     }).catch(function (erro) {
+         console.log(erro);
+         console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+         res.status(500).json(erro.sqlMessage);
+     });
+ }
 
 module.exports = {
     buscarUltimasMedidas,
-    buscarMedidasEmTempoReal
+     buscarMedidasEmTempoReal
 
 }
+
+//  function buscarUltimasMedidas2(req, res) {
+
+    
+//      var idUsuario = req.params.idUsuario;
+
+//      medidaModel.buscarUltimasMedidas2(idUsuario).then(function (resultado) {
+//          if (resultado.length > 0) {
+//              res.status(200).json(resultado);
+//          } else {
+//              res.status(204).send("Nenhum resultado encontrado!")
+//          }
+//      }).catch(function (erro) {
+//          console.log(erro);
+//          console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+//          res.status(500).json(erro.sqlMessage);
+//      });
+//  }
+
+//  function buscarMedidasEmTempoReal2(req, res) {
+
+//      var idUsuario = req.params.idUsuario;
+
+//     console.log(`Recuperando medidas em tempo real`);
+
+//     medidaModel.buscarMedidasEmTempoReal2(idUsuario).then(function (resultado) {
+//         if (resultado.length > 0) {
+//             res.status(200).json(resultado);
+//         } else {
+//             res.status(204).send("Nenhum resultado encontrado!")
+//         }
+//     }).catch(function (erro) {
+//         console.log(erro);
+//         console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+//         res.status(500).json(erro.sqlMessage);
+//     });
+//  }
+
+//  module.exports = {
+//      buscarUltimasMedidas2,
+//       buscarMedidasEmTempoReal2
+
+//  }
+
+
+
+
+
+  function buscarUltimasMedidas3(req, res) {
+
+    
+      var idLivro = req.params.idLivro;
+
+      medidaModel.buscarUltimasMedidas3(idLivro).then(function (resultado) {
+          if (resultado.length > 0) {
+              res.status(200).json(resultado);
+          } else {
+              res.status(204).send("Nenhum resultado encontrado!")
+          }
+      }).catch(function (erro) {
+          console.log(erro);
+          console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+          res.status(500).json(erro.sqlMessage);
+      });
+  }
+
+  function buscarMedidasEmTempoReal3(req, res) {
+
+      var idLivro = req.params.idLivro;
+
+     console.log(`Recuperando medidas em tempo real`);
+
+     medidaModel.buscarMedidasEmTempoReal3(idLivro).then(function (resultado) {
+         if (resultado.length > 0) {
+             res.status(200).json(resultado);
+         } else {
+             res.status(204).send("Nenhum resultado encontrado!")
+         }
+     }).catch(function (erro) {
+         console.log(erro);
+         console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+         res.status(500).json(erro.sqlMessage);
+     });
+  }
+
+//   module.exports = {
+//       buscarUltimasMedidas3,
+//        buscarMedidasEmTempoReal3
+
+//   }
