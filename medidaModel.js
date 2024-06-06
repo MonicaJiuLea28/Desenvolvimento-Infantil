@@ -1,35 +1,75 @@
 var database = require("../database/config");
 
-function buscarUltimasMedidas(idAquario, limite_linhas) {
+function buscarUltimasMedidas() {
 
     var instrucaoSql = `SELECT 
-        dht11_temperatura as temperatura, 
-        dht11_umidade as umidade,
-                        momento,
-                        DATE_FORMAT(momento,'%H:%i:%s') as momento_grafico
-                    FROM medida
-                    WHERE fk_aquario = ${idAquario}
-                    ORDER BY id DESC LIMIT ${limite_linhas}`;
+        idade,genero from Crianca`;
+        
 
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
 }
 
-function buscarMedidasEmTempoReal(idAquario) {
+ function buscarMedidasEmTempoReal() {
 
     var instrucaoSql = `SELECT 
-        dht11_temperatura as temperatura, 
-        dht11_umidade as umidade,
-                        DATE_FORMAT(momento,'%H:%i:%s') as momento_grafico, 
-                        fk_aquario 
-                        FROM medida WHERE fk_aquario = ${idAquario} 
-                    ORDER BY id DESC LIMIT 1`;
+    idade,genero from Crianca`;
 
-    console.log("Executando a instrução SQL: \n" + instrucaoSql);
-    return database.executar(instrucaoSql);
-}
+     console.log("Executando a instrução SQL: \n" + instrucaoSql);
+     return database.executar(instrucaoSql);
+ }
 
 module.exports = {
     buscarUltimasMedidas,
-    buscarMedidasEmTempoReal
+     buscarMedidasEmTempoReal
 }
+
+//  function buscarUltimasMedidas2() {
+
+//      var instrucaoSql = `SELECT 
+//          genero from Crianca`;
+
+//      console.log("Executando a instrução SQL: \n" + instrucaoSql);
+//      return database.executar(instrucaoSql);
+//  }
+
+//  function buscarMedidasEmTempoReal2() {
+
+//      var instrucaoSql = `SELECT 
+//      genero from Crianca`;
+
+//       console.log("Executando a instrução SQL: \n" + instrucaoSql);
+//       return database.executar(instrucaoSql);
+//   }
+
+//   module.exports = {
+//      buscarUltimasMedidas2,
+//       buscarMedidasEmTempoReal2
+//  }
+
+
+
+
+
+  function buscarUltimasMedidas3() {
+
+      var instrucaoSql = `SELECT 
+          qtdlivro from Livro`;
+
+      console.log("Executando a instrução SQL: \n" + instrucaoSql);
+      return database.executar(instrucaoSql);
+  }
+
+  function buscarMedidasEmTempoReal3() {
+
+      var instrucaoSql = `SELECT 
+      qtdLivro from Livro`;
+
+       console.log("Executando a instrução SQL: \n" + instrucaoSql);
+       return database.executar(instrucaoSql);
+   }
+
+//    module.exports = {
+//       buscarUltimasMedidas3,
+//        buscarMedidasEmTempoReal3
+//   }
